@@ -86,3 +86,4 @@ source ~/linux-tools/bashrc/aliases
 source ~/linux-tools/bashrc/auto
 source ~/linux-tools/bashrc/ros
 source ~/linux-tools/bashrc/django
+source ~/linux-tools/bashrc/spacex

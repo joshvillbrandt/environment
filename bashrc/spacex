@@ -1,0 +1,4 @@
+alias lb='cd /usr/local/spacex/trunk/load_builder'
+alias rocket='cd /usr/local/spacex/trunk/rocket'
+alias config='cd /usr/local/spacex/trunk/config'
+alias prism='lb;./proxy_standard/bin/linux_opt/prism'
