@@ -1,0 +1,29 @@
+# History
+alias h='history'
+alias hg='history | grep'
+alias pg='ps aux | grep'
+
+# File-system Traversal
+alias b='cd ..'
+alias bb='b;b'
+alias bbb='b;b;b'
+alias bbbb='b;b;b;b'
+alias bbbbb='b;b;b;b;b'
+
+alias bl='b;ls'
+alias bbl='bb;ls'
+alias bbbl='bbb;ls'
+alias bbbbl='bbbb;ls'
+alias bbbbbl='bbbbb;ls'
+
+alias bll='b;ll'
+alias bbll='bb;ll'
+alias bbbll='bbb;ll'
+alias bbbbll='bbbb;ll'
+alias bbbbbll='bbbbb;ll'
+
+# ls aliases
+alias l='ls -A'
+alias ll='ls -Alh'
+alias lt='ls -Alht'
+alias lfs='ls -AlhrS --group-directories-first'

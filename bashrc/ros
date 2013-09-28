@@ -1,0 +1,5 @@
+# ROS
+#source /opt/ros/groovy/setup.bash
+#export ROS_PACKAGE_PATH=~/ros:/opt/ros/electric/stacks:#$ROS_PACKAGE_PATH
+#export ROS_MASTER_URI=http://jvillbrandt-robot:11311
+alias sshr='ssh -Y jvillbrandt-robot.local'

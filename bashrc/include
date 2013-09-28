@@ -77,71 +77,12 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
-#alias ll='ls -alF'
-#alias la='ls -A'
-#alias l='ls -CF'
-
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-# sources /etc/bash.bashrc).
-if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-    . /etc/bash_completion
-fi
-
-# Auto Terminals
-alias auto='~/.auto'
 #alias ptop='top -p $(pidof $1 | tr ' ' ',')'
 #alias ptop='top -p $(pidof $1 | tr '"'"' '"'"' '"'"','"'"')'
 #function ptop() { top -p pidof "$@" | tr ' ' ','; }
 
-# History
-alias h='history'
-alias hg='history | grep'
-alias pg='ps aux | grep'
-
-# File-system Traversal
-alias b='cd ..'
-alias bb='b;b'
-alias bbb='b;b;b'
-alias bbbb='b;b;b;b'
-alias bbbbb='b;b;b;b;b'
-
-alias bl='b;ls'
-alias bbl='bb;ls'
-alias bbbl='bbb;ls'
-alias bbbbl='bbbb;ls'
-alias bbbbbl='bbbbb;ls'
-
-alias bll='b;ll'
-alias bbll='bb;ll'
-alias bbbll='bbb;ll'
-alias bbbbll='bbbb;ll'
-alias bbbbbll='bbbbb;ll'
-
-alias ll='ls -lh'
-alias la='ls -A'
-alias ltr='ls -ltrh'
-alias lsr='ls -lSrh'
-
-# ROS
-#source /opt/ros/groovy/setup.bash
-#export ROS_PACKAGE_PATH=~/ros:/opt/ros/electric/stacks:#$ROS_PACKAGE_PATH
-#export ROS_MASTER_URI=http://jvillbrandt-robot:11311
-alias sshr='ssh -Y jvillbrandt-robot.local'
-
-# Django
-alias rs1='python manage.py runserver 0.0.0.0:8001'
-alias rs2='python manage.py runserver 0.0.0.0:8002'
-alias rs3='python manage.py runserver 0.0.0.0:8003'
-alias rs4='python manage.py runserver 0.0.0.0:8004'
-alias rs5='python manage.py runserver 0.0.0.0:8005'
+# include additional files here
+source ~/linux-tools/bashrc/aliases
+source ~/linux-tools/bashrc/auto
+source ~/linux-tools/bashrc/ros
+source ~/linux-tools/bashrc/django
