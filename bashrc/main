@@ -87,3 +87,8 @@ source ~/linux-tools/bashrc/auto
 source ~/linux-tools/bashrc/ros
 source ~/linux-tools/bashrc/django
 source ~/linux-tools/bashrc/spacex
+
+# machine specific file (won't be added with git add)
+if [ -f ~/linux-tools/bashrc/machine ]; then
+    source ~/linux-tools/bashrc/machine
+fi
