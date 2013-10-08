@@ -22,6 +22,8 @@ alias bbbll='bbb;ll'
 alias bbbbll='bbbb;ll'
 alias bbbbbll='bbbbb;ll'
 
+alias home='cd ~/'
+
 # ls aliases
 alias l='ls -A'
 alias ll='ls -Alh'
