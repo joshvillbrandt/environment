@@ -81,6 +81,10 @@ fi
 #alias ptop='top -p $(pidof $1 | tr '"'"' '"'"' '"'"','"'"')'
 #function ptop() { top -p pidof "$@" | tr ' ' ','; }
 
+sourceif () {
+    [[ -f "$1" ]] && source "$1"
+}
+
 # include additional files here
 source ~/linux-tools/bashrc/aliases
 source ~/linux-tools/bashrc/auto
@@ -89,6 +93,4 @@ source ~/linux-tools/bashrc/django
 source ~/linux-tools/bashrc/spacex
 
 # machine specific file (won't be added with git add)
-if [ -f ~/linux-tools/bashrc/machine ]; then
-    source ~/linux-tools/bashrc/machine
-fi
+sourceif ~/linux-tools/bashrc/machine

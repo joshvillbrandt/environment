@@ -1,6 +1,6 @@
 # ROS Hydro
-source /opt/ros/hydro/setup.bash
-source ~/catkin_ws/devel/setup.bash
+sourceif /opt/ros/hydro/setup.bash
+sourceif ~/catkin_ws/devel/setup.bash
 #source /opt/ros/groovy/setup.bash
 #export ROS_PACKAGE_PATH=~/ros:/opt/ros/electric/stacks:#$ROS_PACKAGE_PATH
 
