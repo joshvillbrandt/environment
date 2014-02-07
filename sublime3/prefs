@@ -1,9 +1,7 @@
-// install with:
-// ln -s ~/linux-tools/sublime3/prefs ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
-
 {
-	"font_size": 10,
+	"font_size": 9,
 	"preview_on_click": false,
 	"translate_tabs_to_spaces": true,
-    "spell_check": false,
+	"spell_check": false,
+	"word_wrap": true,
 }
