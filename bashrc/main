@@ -89,7 +89,7 @@ sourceif () {
 source ~/linux-tools/bashrc/aliases
 source ~/linux-tools/bashrc/auto
 source ~/linux-tools/bashrc/ros
-source ~/linux-tools/bashrc/django
+source ~/linux-tools/bashrc/web
 source ~/linux-tools/bashrc/work
 
 # machine specific file (won't be added with git add)
