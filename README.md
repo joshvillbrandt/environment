@@ -1,21 +1,23 @@
-linux-tools
-===========
+# linux-tools
 
-Some favorite linux files to make a new machine feel like home.
+Make a new machine feel like home.
 
-# Setup
+## Setup
 
 Install and setup the bashrc files as follows:
 
-    cd ~/
-    git clone https://github.com/joshvillbrandt/linux-tools.git
-    mv .bashrc .bashrc_original
-    ln -s linux-tools/bashrc/main .bashrc
-    source .bashrc
+```bash
+cd ~/
+git clone https://github.com/joshvillbrandt/linux-tools.git
+mv .bashrc .bashrc_original
+ln -s linux-tools/bashrc/main .bashrc
+source .bashrc
+```
 
-You can then optionally include files by editing the bashrc/include file.
+## Optional
 
+```bash
 # set tty flags (ubuntu)
-
-    sudo visudo
-    #Defaults !tty_tickets
+sudo visudo
+#Defaults !tty_tickets
+```
