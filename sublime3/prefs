@@ -5,9 +5,10 @@
 		"Vintage"
 	],
 	"preview_on_click": false,
-	"spell_check": false,
+	"spell_check": true,
 	"translate_tabs_to_spaces": true,
 	"word_wrap": true,
-    "theme": "Spacegray Eighties.sublime-theme",
-    "color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme"
+	"rulers": [80],
+	"theme": "Spacegray Eighties.sublime-theme",
+	"color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme"
 }
