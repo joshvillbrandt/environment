@@ -7,3 +7,6 @@ git config --global credential.helper cache
 
 # Set the cache to timeout after 1 week (setting is in seconds)
 git config --global credential.helper 'cache --timeout=604800'
+
+# Add some color
+git config --global color.ui auto
