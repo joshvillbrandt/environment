@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # History
 alias h='history'
 alias hg='history | grep'
@@ -25,7 +27,23 @@ alias bbbbbll='bbbbb;ll'
 alias home='cd ~/'
 
 # ls aliases
+alias ls='ls -G' # -G for mac color
 alias l='ls -A'
 alias ll='ls -Alh'
 alias lt='ls -Alht'
 alias lfs='ls -AlhrS --group-directories-first'
+
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+alias auto='~/linux-tools/bashrc/autoapp'
+
+#alias ptop='top -p $(pidof $1 | tr ' ' ',')'
+#alias ptop='top -p $(pidof $1 | tr '"'"' '"'"' '"'"','"'"')'
+#function ptop() { top -p pidof "$@" | tr ' ' ','; }

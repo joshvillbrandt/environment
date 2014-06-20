@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # ROS Hydro
 sourceif /opt/ros/hydro/setup.bash
 sourceif ~/catkin_ws/devel/setup.bash

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Django
 alias drs1='python manage.py runserver 0.0.0.0:8001'
 alias drs2='python manage.py runserver 0.0.0.0:8002'
@@ -13,3 +15,8 @@ alias frs3='python manage.py runserver -t 0.0.0.0 -p 7003'
 alias frs4='python manage.py runserver -t 0.0.0.0 -p 7004'
 alias frs5='python manage.py runserver -t 0.0.0.0 -p 7005'
 alias frs6='python manage.py runserver -t 0.0.0.0 -p 7006'
+
+ # Vagrant
+ alias vup='vagrant up --provider=openstack'
+ alias vssh='vagrant ssh'
+ alias vdown='vagrant destroy'
