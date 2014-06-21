@@ -20,6 +20,8 @@ alias frs6='python manage.py runserver -t 0.0.0.0 -p 7006'
 alias vup='vagrant up --provider=openstack'
 alias vssh='vagrant ssh'
 alias vdown='vagrant destroy'
+alias vdev="vssh -c '/vagrant/deploy/dns-dev.sh'"
+alias vprod="vssh -c '/vagrant/deploy/dns-prod.sh'"
 
 # work
 alias adb='python manage.py runserver -t 0.0.0.0 -p 7777'
