@@ -28,3 +28,6 @@ alias vrecycle="vdown; vup; vrestore"
 
 # work
 alias adb='python manage.py runserver -t 0.0.0.0 -p 7777'
+ossh() {
+    ssh -i ~/demo-keypair.pem ubuntu@$1
+}
