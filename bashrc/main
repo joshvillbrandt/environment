@@ -39,3 +39,4 @@ source ~/linux-tools/bashrc/prompt
 source ~/linux-tools/bashrc/aliases
 source ~/linux-tools/bashrc/ros
 source ~/linux-tools/bashrc/web
+source ~/linux-tools/git/git-completion.bash
