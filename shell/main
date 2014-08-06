@@ -26,4 +26,3 @@ sourceif () {
 source ~/.environment/shell/aliases
 source ~/.environment/shell/ros
 source ~/.environment/shell/web
-source ~/.environment/git/git-completion.bash
