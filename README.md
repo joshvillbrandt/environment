@@ -1,17 +1,13 @@
-# linux-tools
+# environment
 
 Make a new machine feel like home.
 
 ## Setup
 
-Install and setup the bashrc files as follows:
+Install and setup the shell files as follows:
 
 ```bash
-cd ~/
-git clone https://github.com/joshvillbrandt/linux-tools.git
-mv .bashrc .bashrc_original
-ln -s linux-tools/bashrc/main .bashrc
-source .bashrc
+curl -L https://raw.github.com/joshvillbrandt/environment/install.sh | 
 ```
 
 ## Optional
@@ -21,3 +17,7 @@ source .bashrc
 sudo visudo
 #Defaults !tty_tickets
 ```
+
+## Todo
+
+* install submline w/ package control, js linter, python linter, and git gutter
