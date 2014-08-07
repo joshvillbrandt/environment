@@ -27,7 +27,7 @@ alias vrestore="vssh -c '/vagrant/infra.conf.d/restore-latest.sh'"
 alias vrecycle="vdown; vup; vrestore"
 
 # Heroku
-alias hrefresh='git reset HEAD~; git push -f heroku master'
+alias hrefresh='git reset HEAD~; git push -f heroku master; git checkout HEAD .; git push heroku master'
 
 # work
 alias adb='python manage.py runserver -t 0.0.0.0 -p 7777'

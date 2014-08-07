@@ -26,3 +26,5 @@ hash git >/dev/null 2>&1 && /usr/bin/env git clone https://github.com/joshvillbr
 # add custom aliases, etc
 echo "source ~/.environment/shell/main" >> ~/.zshrc
 source ~/.zshrc
+
+# TODO: sublime 3 user pres
