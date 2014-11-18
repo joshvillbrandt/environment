@@ -32,5 +32,5 @@ alias hrefresh='git reset HEAD~; git push -f heroku master; git pull origin mast
 # work
 alias adb='python manage.py runserver -t 0.0.0.0 -p 7777'
 ossh() {
-    ssh -i ~/demo-keypair.pem ubuntu@$1
+    ssh -i ~/demo-keypair.pem -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no ubuntu@$1
 }

@@ -44,6 +44,15 @@ fi
 
 alias auto='~/linux-tools/bashrc/autoapp'
 
+#function run
+run() {
+    number=$1
+    shift
+    for i in `seq $number`; do
+      $@
+    done
+}
+
 #alias ptop='top -p $(pidof $1 | tr ' ' ',')'
 #alias ptop='top -p $(pidof $1 | tr '"'"' '"'"' '"'"','"'"')'
 #function ptop() { top -p pidof "$@" | tr ' ' ','; }
