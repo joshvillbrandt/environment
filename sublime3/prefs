@@ -1,6 +1,6 @@
 {
 	"color_scheme": "Packages/User/base16-eighties.dark (SL).tmTheme",
-	"font_size": 13,
+	"font_size": 12,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -11,7 +11,9 @@
 		79
 	],
 	"spell_check": true,
+	"tab_size": 2,
 	"theme": "Spacegray Eighties.sublime-theme",
 	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
 	"word_wrap": true
 }
