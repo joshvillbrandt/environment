@@ -56,3 +56,8 @@ run() {
 #alias ptop='top -p $(pidof $1 | tr ' ' ',')'
 #alias ptop='top -p $(pidof $1 | tr '"'"' '"'"' '"'"','"'"')'
 #function ptop() { top -p pidof "$@" | tr ' ' ','; }
+
+# git aliases
+alias mergemaster='git checkout master; git merge develop; git push origin master; git checkout develop'
+alias push='git push origin develop --tags'
+alias pull='git push origin master;git pull origin develop'
