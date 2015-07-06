@@ -1,5 +1,6 @@
 {
 	"color_scheme": "Packages/User/base16-eighties.dark (SL).tmTheme",
+	"ensure_newline_at_eof_on_save": true,
 	"font_size": 12,
 	"ignored_packages":
 	[
@@ -15,5 +16,6 @@
 	"theme": "Spacegray Eighties.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
+	"update_check": false,
 	"word_wrap": true
 }

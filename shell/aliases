@@ -58,6 +58,8 @@ run() {
 #function ptop() { top -p pidof "$@" | tr ' ' ','; }
 
 # git aliases
-alias mergemaster='git checkout master; git merge develop; git push origin master; git checkout develop'
+alias mergemaster='git checkout master; git merge develop; git push origin master --tags; git checkout develop'
 alias push='git push origin develop --tags'
 alias pull='git push origin master;git pull origin develop'
+
+search() { grep -rn $1 -e $2 | less -S }
