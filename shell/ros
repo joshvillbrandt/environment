@@ -1,11 +1,13 @@
 #!/bin/bash
 
 # ROS Hydro
-sourceif /opt/ros/hydro/setup.bash
-sourceif ~/catkin_ws/devel/setup.bash
-#source /opt/ros/groovy/setup.bash
-#export ROS_PACKAGE_PATH=~/ros:/opt/ros/electric/stacks:#$ROS_PACKAGE_PATH
+sourceif /opt/ros/jade/setup.zsh
+sourceif ~/catkin_ws/devel/setup.zsh
 
-# Mecanumbot
-#export ROS_MASTER_URI=http://jvillbrandt-robot.local:11311
-alias sshr='ssh -Y jvillbrandt-robot.local'
+# ROS Network Config
+export ROS_HOSTNAME=$(hostname)
+
+# ROS Robot Aliases
+alias use-mbot="export ROS_MASTER_URI=http://mecanumbot:11311"
+alias use-rov="export ROS_MASTER_URI=http://bluerov:11311"
+alias use-local="export ROS_MASTER_URI=http://localhost:11311"
