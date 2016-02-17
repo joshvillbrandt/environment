@@ -7,10 +7,10 @@ Make a new machine feel like home.
 Install and setup the shell files as follows:
 
 ```bash
-curl -L https://raw.github.com/joshvillbrandt/environment/install.sh | 
+sh -c "$(wget https://raw.github.com/joshvillbrandt/environment/install.sh -O -)"
 ```
 
-## Optional
+### Optional
 
 ```bash
 # set tty flags (ubuntu)
@@ -21,3 +21,5 @@ sudo visudo
 ## Todo
 
 * install submline w/ package control, js linter, python linter, and git gutter
+* nvm, npm, node
+* better support for Ubuntu vs Mac commands
